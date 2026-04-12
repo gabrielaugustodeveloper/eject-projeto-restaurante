@@ -1,0 +1,667 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+body{
+    margin: 0 auto;
+    padding: 0 auto;
+    font-family: 'Inter', sans-serif;
+}
+
+
+#secao_banner_home{
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url( "/static/imagens/bannerprincipal.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 80vh;  
+    margin: 0; 
+}
+#secao_banner_home h1{
+    font-size: 4em;
+    padding: 0.2em;
+}
+#secao_banner_home h2{
+    font-size: large;
+    font-weight: normal;
+}
+#apollo{
+    color: #E17100;
+}
+button{
+    width: 200px;
+    height: 60px;
+    color: white;
+    background-color: #E17100;
+    border-radius: 7px;
+    border: none;
+    font-size: 20px;
+}
+#secao_destaques{
+    text-align: center;
+    background-color: whitesmoke;
+    padding: 2em;
+    padding-top: 1em;
+}
+#div_destaques{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    padding: 0.5em;
+}
+#div_destaques div{
+    width: 13em;
+    height: 23em;
+    padding: 1em;
+    border-radius: 10px;
+    background-color: white;
+    margin-top: 1em;
+    cursor: pointer;
+    transition: all 0.3s ease ;
+}
+#div_destaques div:hover{
+    border: 5px solid #E17100;
+}
+#secao_destaques h5{
+    padding: 0.7em;
+}
+#secao_destaques p{
+    text-align: left;
+    padding: 0.7em;
+}
+
+#secao_experiencia {
+    background: linear-gradient(to right, #8B4513, #C46A2E); 
+    padding: 90px 5%;
+    color: white;
+    min-height: 420px;
+}
+.experiencia-container {
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 80px;
+    flex-wrap: wrap;
+}
+.experiencia-texto {
+    flex: 1;
+    min-width: 320px;
+}
+.experiencia-texto h2 {
+    font-size: 2.6em;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+.experiencia-texto h3 {
+    font-size: 1.65em;
+    color: #FFDD99;
+    margin: 15px 0 25px;
+    font-weight: 600;
+}
+.experiencia-texto p {
+    font-size: 1.2em;
+    line-height: 1.55;
+    max-width: 460px;
+    margin-bottom: 35px;
+}
+.experiencia-botao-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.experiencia-botao {
+    background-color: #E17100;
+    color: white;
+    border: 2px solid #E17100;
+    padding: 0px 36px;
+    font-size: 1em;
+    font-weight: 700;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-bottom: 12px;
+}
+.experiencia-botao:hover {
+    background-color: #c15a00;
+    transform: translateY(-3px);
+}
+.estrelas {
+    font-size: 2.1em;
+    color: #FFCC00;
+    letter-spacing: 6px;
+    margin-left: 15px;
+}
+.experiencia-fotos {
+    flex: 1;
+    min-width: 320px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.experiencia-fotos img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.35);
+}
+.foto-cima {
+    height: 240px;
+    object-fit: cover;
+}
+.foto-baixo {
+    height: 240px;
+    object-fit: cover;
+}
+@media (max-width: 900px) {
+    .experiencia-container {
+        gap: 50px;
+        justify-content: center;
+        text-align: center;
+    }
+    .experiencia-texto {
+        align-items: center;
+    }
+    .experiencia-botao-container {
+        align-items: center;
+    }
+}
+
+#nosso_espaco{
+    text-align: center;
+    padding: 2em;
+    margin-bottom: 1em;
+}
+#nosso_espaco h1{
+    margin-bottom: 1em;
+}
+.swiper {
+    max-width: 1118px;
+    max-height: 650px;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #444;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+
+dialog::backdrop{
+    background-color: rgb(0 0 0 / .3);
+}
+dialog{
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 1rem rgb(0 0 0 / .3);
+}
+
+#banner_sobre_nos{
+    background-color: #262626;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 25em;
+}
+#banner_sobre_nos h2{
+    font-weight: lighter;
+}
+#banner_sobre_nos h1{
+    font-size: 4em;
+}
+#nossa_historia{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+#nossa_historia h1{
+    font-size: 3em;
+    text-align: center;
+}
+.nossa_historia_texto_e_imagem{
+    display: flex;
+    justify-content: space-between;
+    gap: 3em;
+    margin-left: 15em;
+    margin-right: 15em;
+    margin-top: 80px;
+}
+.nossa_historia_p{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+#missao_visao_valores{
+    background-color: whitesmoke;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 5em;
+
+}
+#missao_visao_valores h1{
+    font-size: 3em;
+}
+.missao_visao_valores_individual{
+    width: 240px;
+    height: 334px;
+    text-align: center;
+    background-color: white;
+    box-shadow: 0px 8px 10px -6px rgba(0,0,0,0.5);
+    border-radius: 7%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+.missao_visao_valores_conjunto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 160px;
+}
+
+.funcionario_individual{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+}
+.funcionario_individual p{
+    font-size: xx-small;
+}
+.funcionario_individual h6{
+    color: #E17100;
+}
+.funcionarios_foto{
+    width: 352px;
+    height: 190px;
+    border-radius: 10px;
+}
+.funcionarios{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3em;
+    padding-bottom: 2em;
+}
+#nossa_equipe{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.nossa_equipe_texto{
+    text-align: center;
+    margin: 45px;
+}
+.nossa_equipe_texto h1{
+    font-size: 3em;
+}
+.nossa_equipe_texto h2{
+    font-weight: normal;
+    font-size: 1em;
+    margin-top: 10px;
+}
+#secao_servicos{
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    padding: 80px 20px;
+}
+#secao_servicos h1{
+    font-size: 3em;
+}
+.nossos_servicos_individual{
+    width: 352px;
+    height: 256px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    box-shadow: 0px 8px 10px -6px rgba(0,0,0,0.5);
+    border-radius: 7px;
+    background-color: white;
+}
+.nossos_servicos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 48px;
+    margin-bottom: 70px;
+}
+
+
+.contener{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+dialog{
+    width: 540px;
+    height: 700px;
+    border: none;
+    border-radius: 10px;
+    position: relative;
+}
+.fechar-modal {
+    position: absolute;
+    top: 25px;
+    right: 45px;
+    font-size: 25px;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    color: #000;
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+dialog[open] {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+dialog form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+dialog input{
+    width: 450px;
+    height: 60px;
+    border: 2px solid #BBBBBB;
+    border-radius: 7px;
+    outline: unset;
+}
+dialog select{
+    width: 450px;
+    height: 60px;
+    border-radius: 7px;
+    border: 2px solid #BBBBBB;
+}
+dialog form div{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+.info_formulario{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+.butao_reserva{
+    width: 450px;
+    height: 40px;
+    font-size: small;
+    font-weight: bold;
+}
+
+.conteudoArtigo{
+    width: 80%;
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px;
+    text-align: left;
+    box-shadow: 0px 8px 10px -6px rgba(0,0,0,0.5);
+}
+.imagemBlog{
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+.imagemBlog p{
+    font-size: smaller;
+    color: #525252;
+}
+#abs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+hr{
+   border: 0.1px solid #262626;
+}
+.conteudoArtigo button{
+    position: relative;
+    left: 6px;
+    font-size: medium;
+    width: 10em;
+    background-color: #E17100;
+    color: white;
+}
+.conteudoArtigo h1{
+    font-size: 3em;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+    #div_destaques {
+    flex-direction: column;
+  }
+  .nossa_historia_texto_e_imagem {
+    flex-direction: column;
+    margin: 20px;
+  }
+  .missao_visao_valores_conjunto {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .funcionarios {
+    flex-direction: column;
+  }
+  .nossos_servicos {
+    flex-direction: column;
+  }
+  #secao_banner_home h1 {
+    font-size: 2em;
+  }
+  dialog {
+    width: 90%;
+    height: auto;
+  }
+
+  dialog input,
+  dialog select,
+  .butao_reserva {
+    width: 100%;
+  }
+  #div_destaques div{
+    height: 20em;
+    padding: 0 auto;
+  }
+  body h1{
+    font-size: 2em;
+  }
+  #secao_experiencia{
+    display: block;
+    height: auto;
+    padding: 10px;
+  }
+  #div_venha_nos_conhecer_titulo_texto h3{
+    padding: 0;
+  }
+  #div_venha_nos_conhecer_texto{
+    padding: 0%;
+  }
+  #div_venha_nos_conhecer_texto p{
+    margin: 5px;
+  }
+  #div_experiencia{
+    padding: 5px;
+    border: 1px solid white;
+    margin: 5px;
+  }
+  #div_secao_experiencia_fotos img{
+    position: initial;
+    width: 40vw;
+  }
+  #div_secao_experiencia_fotos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+  }
+  #div_secao_experiencia_fotos div{
+    grid-template-rows: 4.5em;
+  }
+  .missao_visao_valores_individual{
+    width: 150px;
+    height: 260px;
+    gap: 0%;
+  }
+  .missao_visao_valores_conjunto{
+    margin-top: 0;
+  }
+  .missao_visao_valores_individual h5{
+    margin: 5px;
+    font-size: 15px;
+
+  }
+  .missao_visao_valores_individual p{
+    font-size: small;
+  }
+  #banner_sobre_nos h1{
+    font-size: 2em;
+  }
+  #banner_sobre_nos h2{
+    font-size: 1em;
+  }
+  #banner_sobre_nos{
+    height: 15em;
+  }
+  #nossa_historia h1{
+    font-size: 2em;
+    margin: 0;
+
+  }
+  #nossa_historia{
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  .nossa_historia_texto_e_imagem{
+    font-size: small;
+  }
+  .nossa_historia_img img{
+    width: 200px;
+  }
+   #missao_visao_valores{
+    height: fit-content;
+    row-gap: 0;
+    padding: 20px;
+   }
+  #missao_visao_valores h1{
+    font-size: 2em;
+
+  }#nossa_equipe h1{
+    font-size: 2em;
+  }
+  #nossa_equipe{
+    margin: 0;
+  }
+  .funcionario_individual{
+    gap: 0;
+  }
+  #secao_servicos h1{
+    font-size: 2em;
+  }
+  #secao_servicos{
+    padding: 0%;
+    gap: 0;
+  }
+  .nossos_servicos{
+    gap: 10px;
+  }
+  .nossos_servicos_individual{
+    width: 200px;
+    height: 190px;
+  }
+
+  .reserva{
+    width: 350px;
+    height: 500px;
+  }
+  .reserva input{
+    width: 280px;
+    height: 40px;
+  }
+  .info_formulario{
+    column-gap: 2px;
+    font-size: smaller;
+  }
+  .info_formulario select{
+    column-gap: 0;
+    font-size: smaller;
+    width: 280px;
+    height: 40px;
+  }
+  .cabecalho_form h2{
+    font-size: medium;
+  }
+  .cabecalho_form img{
+    width: 100px;
+  }
+  .cabecalho_form{
+    text-align: center;
+   }
+   .fechar-modal{
+    font-size: medium;
+   }
+   .conteudoArtigo{
+    width: 320px;
+    height: fit-content;
+   }
+   .texto{
+    font-size: small;
+   }
+   .conteudoArtigo h1{
+    font-size: 1em;
+   }
+   
+   article{
+    font-size: small;
+   }
+   aside{
+    display: none;
+   }
+
+}
+
